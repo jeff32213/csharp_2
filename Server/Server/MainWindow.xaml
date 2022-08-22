@@ -1,0 +1,22 @@
+﻿<Window x:Class="Server.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Server"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="600">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20*"/>
+            <ColumnDefinition Width="100*"/>
+            <ColumnDefinition Width="100*"/>
+        </Grid.ColumnDefinitions>
+        <Button Content="Start Server" HorizontalAlignment="Center" Margin="0,123,0,0" VerticalAlignment="Top" Width="157" Height="58" Click="Start" Grid.Column="2"/>
+        <TextBox Name="receive_msg" HorizontalAlignment="Left" Height="300" Margin="50,78,0,0" TextWrapping="Wrap" IsReadOnly="True" VerticalAlignment="Top" Width="246" Grid.ColumnSpan="3"/>
+        <Label Content="Host Address:" FontSize="20" HorizontalAlignment="Left" Margin="33,32,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <TextBox Name="server_ip" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="123,37,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="158" BorderBrush="#FFD5512E" BorderThickness="2,2,2,2" Height="26" />
+        <TextBox Name="server_port" Grid.Column="2" HorizontalAlignment="Left" Margin="23,37,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="61" BorderBrush="#FFD5512E" BorderThickness="2,2,2,2" Height="26"/>
+        <Button Content="Stop Listen" HorizontalAlignment="Center" Margin="0,247,0,0" VerticalAlignment="Top" Width="157" Height="58" Click="Stop" Grid.Column="2"/>
+    </Grid>
+</Window>

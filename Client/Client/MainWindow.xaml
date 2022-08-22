@@ -1,0 +1,30 @@
+﻿<Window x:Class="Client.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Client"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="440" Width="635">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="386*"/>
+            <ColumnDefinition Width="70*"/>
+            <ColumnDefinition Width="18*"/>
+            <ColumnDefinition Width="54*"/>
+            <ColumnDefinition Width="107*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox Name="msg" HorizontalAlignment="Left" Height="37" Margin="181,131,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="320" Grid.ColumnSpan="4" />
+        <Button Content="Send" HorizontalAlignment="Left" Height="45" Margin="53,130,0,0" VerticalAlignment="Top" Width="84" Click="Send" Grid.Column="3" Grid.ColumnSpan="2"/>
+        <Button Content="Connect" HorizontalAlignment="Left" Height="45" Margin="53,10,0,0" VerticalAlignment="Top" Width="84" Click="Connect" Grid.ColumnSpan="2" Grid.Column="3"/>
+        <TextBox Name="receive_msg" HorizontalAlignment="Left" Height="206" Margin="20,180,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="591" Grid.ColumnSpan="5" />
+        <Label Content="Message:" FontSize="14" HorizontalAlignment="Left" Margin="31,135,0,0" VerticalAlignment="Top" Height="45" Width="73"/>
+        <Label Content="Socket Address:" FontSize="14" HorizontalAlignment="Left" Margin="31,10,0,0" VerticalAlignment="Top" Height="45" Width="116"/>
+        <Label Content="Username:" FontSize="14" HorizontalAlignment="Left" Margin="31,71,0,0" VerticalAlignment="Top" Height="45" Width="87"/>
+        <TextBox Name="input_name" HorizontalAlignment="Left" Height="37" Margin="181,71,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="320" Grid.ColumnSpan="4" />
+        <TextBox Name="input_ip" HorizontalAlignment="Left" Height="37" Margin="181,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="195" />
+        <TextBox Name="input_port" HorizontalAlignment="Left" Height="37" Margin="27,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="78" Grid.Column="1" Grid.ColumnSpan="3" />
+        <Button Content="Discoonect" HorizontalAlignment="Left" Height="45" Margin="53,67,0,0" VerticalAlignment="Top" Width="84" Click="Disconnect" Grid.ColumnSpan="2" Grid.Column="3"/>
+        <TextBox Name="status" Background="BlanchedAlmond" HorizontalAlignment="Left" Margin="20,391,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="127" Height="24"/>
+    </Grid>
+</Window>

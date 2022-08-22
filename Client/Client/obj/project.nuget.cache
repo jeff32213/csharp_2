@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "DQQUE48ypHJ6wjsVzMmh3t/79U/FpHaKyPw2xbfLMiIzYxBJukmTw7tqEU4+vHUtlB5UbQk9iUs1ETSIUi7EVw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Jeff\\Documents\\GitHub\\Socket_Sample_Code\\Client\\Client\\Client.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Jeff\\.nuget\\packages\\json.net\\1.0.33\\json.net.1.0.33.nupkg.sha512",
+    "C:\\Users\\Jeff\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
